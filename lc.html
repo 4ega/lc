@@ -1,0 +1,35 @@
+<head>
+  <title>
+    Local Chat
+  </title>
+</head>
+
+<body>
+  <h1>
+    Local Chat
+  </h1>
+  {{> base }}
+</body>
+
+<template name="base">
+  {{#if userLoggetIn}}
+    {{> chat }}
+    <div class="messageInput">
+      <input type="text" id="text">
+      <input type="submit" id="submit">
+    </div>
+  {{else }}
+    <h2>Log in</h2>
+    {{ loginButtons }}
+  {{/if}}
+</template>
+
+<template name="chat">
+  <ul class="chat">
+    {{#each collection }}
+    <li>
+      <span class="name">{{ name }}</span>: <span class="message">{{ message }}</span>
+    </li>
+    {{/each }}
+  </ul>
+</template>

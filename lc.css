@@ -1,0 +1,26 @@
+/* CSS declarations go here */
+body{
+  margin: 0;
+  background: #eee;
+}
+h1{
+  margin: 0;
+  text-align: center;
+  text-transform: uppercase;
+  background: #ccc;
+}
+.chat{
+  margin: 0;
+  padding: 0 10px;
+}
+.chat li{
+  list-style: none;
+}
+.messageInput{
+  background: #ccc;
+}
+.name{
+  display: inline-block;
+  width: 150px;
+  font-weight: bold;
+}
