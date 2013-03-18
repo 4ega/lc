@@ -1,9 +1,14 @@
 /* CSS declarations go here */
+html, body{
+  height: 100%;
+  font-family: Arial, Helvetica;
+}
 body{
   margin: 0;
   background: #eee;
 }
 h1{
+  height: 5%;
   margin: 0;
   text-align: center;
   text-transform: uppercase;
@@ -11,12 +16,15 @@ h1{
 }
 .chat{
   margin: 0;
+  height: 90%;
+  overflow: auto;
   padding: 0 10px;
 }
 .chat li{
   list-style: none;
 }
 .messageInput{
+  height: 5%;
   background: #ccc;
 }
 .name{

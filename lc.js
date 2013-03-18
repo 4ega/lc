@@ -11,6 +11,7 @@ if (Meteor.isClient) {
 
   Template.base.events({
     'click #submit' : function(e, t) {
+      console.log(messages);
       var text = t.find('#text');
       if (text.value) {
         messages.insert({ name: Meteor.user().emails[0].address, message: text.value });
