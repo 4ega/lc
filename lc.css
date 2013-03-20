@@ -5,30 +5,68 @@ html, body{
 }
 body{
   margin: 0;
-  background: #cecece;
+  background: #fff;
 }
 h1{
-  height: 5%;
+  display: block;
   margin: 0;
+  padding: 0.25em 0;
   text-align: center;
   text-transform: uppercase;
-  background: #ccc;
+  background: #2E8B57;
+  color: #fff;
+  font-size: 1.5em;
+  border-top: 1px solid #32CD32;
+  border-bottom: 1px solid #698B69;
+  text-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+}
+h2{
+  margin: 0;
+  padding: 0.625em 0 0.625em 0.625em;
+  color: #607B8B;
+  display: block;
+  font-size: 1.25em;	
 }
 .chat{
+  background-color: #F5FFFA;
   margin: 0;
-  height: 90%;
   overflow: auto;
-  padding: 0 10px;
+  padding: 0.5em;
 }
 .chat li{
+  margin: 0 0 0.75em 0;
+  padding: 0.75em;
+  border: 3px solid #FF8247;
+  display: block;
   list-style: none;
-}
-.messageInput{
-  height: 5%;
-  background: #ccc;
+  font-size: 0.8125em;
+  background-color: #FFF5EE;
+  border-radius: 10px;
+  overflow: hidden;
 }
 .name{
-  display: inline-block;
-  width: 150px;
+  padding: 0 0 0.5em 0;
+  color: #363636;
+  display: block;
   font-weight: bold;
+}
+.message{
+  color: #4F4F4F;	
+}
+.messageInput{
+  padding: 0.75em;
+  background-color: #FF4500;
+}
+.messageInput input[type=text] {
+	width: 100%;
+	display: block;
+	margin: 0;
+	padding: 0;
+	border: 1px solid #000;
+	outline: none;	
+}
+.messageInput input[type=submit] {
+	margin: 0;
+	padding: 0;
+	border: 1px solid #000;	
 }
