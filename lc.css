@@ -1,24 +1,76 @@
 /* CSS declarations go here */
+body, menu, ul, li, input, h1, p{
+  margin: 0;
+  padding: 0;
+  border: none;		
+}
+ul{
+  list-style: none;		
+}
 html, body{
   height: 100%;
   font-family: Arial, Helvetica;
 }
 body{
-  margin: 0;
   background: #fff;
 }
+header{
+  border-top: 1px solid #FF6A6A;
+  border-bottom: 2px solid #8B3A3A;
+  background-color: #CD5555;
+  position: relative;	
+}
 h1{
+  background-image: url(img/logo.png);
+  background-repeat: no-repeat;
+  background-position: left center;
   display: block;
-  margin: 0;
-  padding: 0.25em 0;
   text-align: center;
   text-transform: uppercase;
-  background: #2E8B57;
   color: #fff;
   font-size: 1.5em;
-  border-top: 1px solid #32CD32;
-  border-bottom: 1px solid #698B69;
+  padding: 0.25em 0;
   text-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+}
+a.menu_toggle{
+  position: absolute;
+  top: 0.25em;
+  right: 0.25em;
+  border: 2px solid blue;
+  text-indent: -9999px;
+  font-size: 1.5em;
+  border: 1px solid #fff;
+  width: 1em;
+  height: 1em;	
+}
+a.menu_toggle:hover{
+  background-color: #EED2EE;
+  border: 1px solid #8B3A3A;	
+}
+menu{
+  background-color: #EED2EE;
+  border-bottom: 1px solid #CDB5CD;
+}
+menu ul{
+  display: block;
+}
+menu ul li{
+  display: block;
+  border-bottom: 1px solid #CDB5CD;
+}
+menu ul li a{
+  display: block;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1em;
+  font-weight: bold;
+  text-decoration: none;
+  color: #5D478B;
+  padding: 0.5em 0;
+}
+menu ul li a:active{
+  background-color: #CDB5CD;
+  color: #5D478B;
 }
 h2{
   margin: 0;
@@ -28,45 +80,52 @@ h2{
   font-size: 1.25em;	
 }
 .chat{
-  background-color: #F5FFFA;
+  background-color: #FFE1FF;
   margin: 0;
   overflow: auto;
-  padding: 0.5em;
+  padding: 0 1.5em;
 }
 .chat li{
-  margin: 0 0 0.75em 0;
-  padding: 0.75em;
-  border: 3px solid #FF8247;
   display: block;
-  list-style: none;
-  font-size: 0.8125em;
-  background-color: #FFF5EE;
-  border-radius: 10px;
+  font-family: Tahoma, Geneva, sans-serif;
+  font-size: 0.75em;
   overflow: hidden;
+  border-bottom: 1px solid #CDB5CD;
+  padding: 1.5em 0;
 }
 .name{
-  padding: 0 0 0.5em 0;
+  padding: 0 0 0.25em 0;
   color: #363636;
   display: block;
   font-weight: bold;
 }
 .message{
-  color: #4F4F4F;	
+  color: #4F4F4F;
+  line-height: 1.25em;
+  display: block;
 }
 .messageInput{
-  padding: 0.75em;
-  background-color: #FF4500;
+  margin: -1px 0 0 0;
+  padding: 0.5em 0.5em 2em 0.5em;
+  background-color: #CD96CD;
+  border-top: 1px solid #8B668B;
 }
 .messageInput input[type=text] {
-	width: 100%;
+	width: 95%;
 	display: block;
-	margin: 0;
-	padding: 0;
-	border: 1px solid #000;
-	outline: none;	
+	margin: 0 auto;
+	padding: 0.5em;
+	border: 1px solid #8B668B;
+	outline: none;
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 0.8125em;	
 }
 .messageInput input[type=submit] {
-	margin: 0;
-	padding: 0;
-	border: 1px solid #000;	
+	display: block;
+	margin: 0.5em auto 0 auto;
+	padding: 0.5em 1em;
+	border: 1px solid #8B668B;
+	color: #363636;
+	font-size: 0.825em;
+	font-weight: bold;	
 }
