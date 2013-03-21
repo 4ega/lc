@@ -7,6 +7,4 @@ autopublish
 insecure
 preserve-inputs
 accounts-base
-accounts-facebook
-accounts-ui
 accounts-password
