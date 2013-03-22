@@ -50,10 +50,8 @@
 
 <template name="signIn">
   <div class="login-wrapper">
-    <label for="name">User name</label>
-    <input id="name" type="text" placeholde="name" />
-    <label for="password">Password</label>
-    <input id="password" type="password" placeholde="password" />
+    <label>User name<input id="name" type="text" placeholde="name" /></label>
+    <label>Password<input id="password" type="password" placeholde="password" /></label>
     <button id="signIn">Sign in</button>
     <p id="toCreateAccountPage">(Create account)</p>
   </div>
@@ -61,13 +59,10 @@
 
 <template name="newAccountForm">
   <div class="create-account-wrapper">
-    <label for="name">User name</label>
-    <input id="name" type="text" placeholde="name" />
-    <label for="password">Password</label>
-    <input id="password" type="password" placeholde="password" />
-    <input id="password-conf" type="password" placeholde="password" />
-    <label for="email">E-mail</label>
-    <input id="email" type="email" placeholde="email" />
+    <label>User name<input id="name" type="text" placeholde="name" /></label>
+    <label>Password<input id="password" type="password" placeholde="password" /></label>
+    <label>Confirm password    <input id="password-conf" type="password" placeholde="password" /></label>
+    <label>E-mail<input id="email" type="email" placeholde="email" /></label>
     <button id="createAccount">Create</button>
     <p id="toSignInPage">(Sign In)</p>
   </div>
