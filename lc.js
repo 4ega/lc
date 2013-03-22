@@ -11,13 +11,24 @@ if (Meteor.isClient) {
 
   Template.base.events({
     'click #toCreateAccountPage': function () {
-      console.log('cap');
       Session.set('creatingAccount', true);
-      console.log(Session.get('createAccount'));
     },
 
     'click #toSignInPage': function () {
       Session.set('creatingAccount', false);
+    },
+
+    'click #createAccount': function(e, t) {
+      Session.set('creatingAccount', false);
+      Accounts.createUser({
+        username: t.find("#name").value,
+        password: t.find("#password").value,
+        email: t.find("#email").value
+      });
+    },
+
+    'click #logOut': function() {
+      Meteor.logout();
     }
   });
 
@@ -27,7 +38,6 @@ if (Meteor.isClient) {
 
   Template.base.events({
     'click #submit' : function(e, t) {
-      console.log(messages);
       var text = t.find('#text');
       if (text.value) {
         messages.insert({ name: Meteor.user().emails[0].address, message: text.value });

@@ -9,12 +9,6 @@
   	<h1>Local Chat</h1>
 	<a class="menu_toggle" href="">Menu</a>
   </header>
-  <menu>
-  	<ul>
-    	<li><a href="">menu item 1</a></li>
-        <li><a href="">menu item 2</a></li>
-    </ul>
-  </menu>
   {{> base }}
 </body>
 
@@ -39,6 +33,12 @@
 </template>
 
 <template name="chat">
+  <nav>
+  	<ul>
+    	<li><a href="">menu item 1</a></li>
+      <li>log out</li>
+    </ul>
+  </nav>
   <ul class="chat">
     {{#each collection}}
     <li>
@@ -60,13 +60,15 @@
 </template>
 
 <template name="newAccountForm">
-  <div class="login-wrapper">
+  <div class="create-account-wrapper">
     <label for="name">User name</label>
     <input id="name" type="text" placeholde="name" />
     <label for="password">Password</label>
     <input id="password" type="password" placeholde="password" />
     <input id="password-conf" type="password" placeholde="password" />
-    <button id="create">Create</button>
+    <label for="email">E-mail</label>
+    <input id="email" type="email" placeholde="email" />
+    <button id="createAccount">Create</button>
     <p id="toSignInPage">(Sign In)</p>
   </div>
 </template>
