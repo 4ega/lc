@@ -1,0 +1,15 @@
+<template name="chat">
+  <nav>
+    <ul>
+      <li>menu item 1</li>
+      <li id="logOut">log out</li>
+    </ul>
+  </nav>
+  <ul class="chat">
+    {{#each collection}}
+    <li>
+      <span class="name">{{ name }}</span><p class="message">{{ message }}</p>
+    </li>
+    {{/each}}
+  </ul>
+</template>

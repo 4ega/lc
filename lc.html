@@ -2,68 +2,13 @@
   <title>
     Local Chat
   </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 </head>
 
 <body>
   <header>
-  	<h1>Local Chat</h1>
-	<a class="menu_toggle" href="">Menu</a>
+    <h1>Local Chat</h1>
+    <a class="menu_toggle" href="">Menu</a>
   </header>
   {{> base }}
 </body>
-
-<template name="base">
-  {{#if userLoggetIn}}
-    {{> chat }}
-    <div class="messageInput">
-      <input type="text" id="text">
-      <input type="submit" id="submit">
-    </div>
-  {{else}}
-    {{#if loggingIn}}
-      <p>Logging in . . .</p>
-    {{else}}
-      {{#if creatingAccount}}
-        {{> newAccountForm}}
-      {{else}}
-        {{> signIn}}
-      {{/if}}
-    {{/if}}
-  {{/if}}
-</template>
-
-<template name="chat">
-  <nav>
-  	<ul>
-    	<li><a href="">menu item 1</a></li>
-      <li>log out</li>
-    </ul>
-  </nav>
-  <ul class="chat">
-    {{#each collection}}
-    <li>
-      <span class="name">{{ name }}</span><p class="message">{{ message }}</p>
-    </li>
-    {{/each}}
-  </ul>
-</template>
-
-<template name="signIn">
-  <div class="login-wrapper">
-    <label>User name<input id="name" type="text" placeholde="name" /></label>
-    <label>Password<input id="password" type="password" placeholde="password" /></label>
-    <button id="signIn">Sign in</button>
-    <p id="toCreateAccountPage">(Create account)</p>
-  </div>
-</template>
-
-<template name="newAccountForm">
-  <div class="create-account-wrapper">
-    <label>User name<input id="name" type="text" placeholde="name" /></label>
-    <label>Password<input id="password" type="password" placeholde="password" /></label>
-    <label>Confirm password    <input id="password-conf" type="password" placeholde="password" /></label>
-    <label>E-mail<input id="email" type="email" placeholde="email" /></label>
-    <button id="createAccount">Create</button>
-    <p id="toSignInPage">(Sign In)</p>
-  </div>
-</template>

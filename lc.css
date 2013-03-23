@@ -2,24 +2,30 @@
 body, menu, ul, li, input, h1, p{
   margin: 0;
   padding: 0;
-  border: none;		
+  border: none;
 }
+
 ul{
-  list-style: none;		
+  list-style: none;
 }
+
 html, body{
   height: 100%;
   font-family: Arial, Helvetica;
 }
+
 body{
-  background: #FFE4E1;
+  background: url(img/bedge_grunge.png);
 }
+
 header{
   border-top: 1px solid #FF6A6A;
   border-bottom: 2px solid #8B3A3A;
   background-color: #CD5555;
   position: relative;	
+  box-shadow: 0 3px 4px #999;
 }
+
 h1{
   background-image: url(img/logo.png);
   background-repeat: no-repeat;
@@ -32,6 +38,7 @@ h1{
   padding: 0.25em 0;
   text-shadow: 2px 2px 5px rgba(0,0,0,0.3);
 }
+
 a.menu_toggle{
   position: absolute;
   top: 0.25em;
@@ -43,21 +50,26 @@ a.menu_toggle{
   width: 1em;
   height: 1em;	
 }
+
 a.menu_toggle:hover{
   background-color: #EED2EE;
   border: 1px solid #8B3A3A;	
 }
+
 menu{
   background-color: #EED2EE;
   border-bottom: 1px solid #CDB5CD;
 }
+
 menu ul{
   display: block;
 }
+
 menu ul li{
   display: block;
   border-bottom: 1px solid #CDB5CD;
 }
+
 menu ul li a{
   display: block;
   text-align: center;
@@ -68,10 +80,12 @@ menu ul li a{
   color: #5D478B;
   padding: 0.5em 0;
 }
+
 menu ul li a:active{
   background-color: #CDB5CD;
   color: #5D478B;
 }
+
 h2{
   margin: 0;
   padding: 0.625em 0 0.625em 0.625em;
@@ -79,12 +93,17 @@ h2{
   display: block;
   font-size: 1.25em;	
 }
+
 .login-wrapper,
 .create-account-wrapper{
-  background-color: #FFBBFF;
-  border-bottom: 1px solid #CD96CD;
-  padding: 0.75em;	
+  width: 300px;
+  background: url(img/beige_paper.png);
+  border-bottom: 1px solid #aaa;
+  margin: 0 auto;	
+  padding: 1em 0;
+  box-shadow: 0px 2px 3px #999;
 }
+
 .login-wrapper label,
 .create-account-wrapper label{
   text-align: center;
@@ -94,51 +113,57 @@ h2{
   font-weight: bold;
   color: #363636;	
 }
+
 .login-wrapper input,
 .create-account-wrapper input{
-  width: 75%;
-  max-width: 320px;
   display: block;
-  margin: 0.25em auto 0 auto;
-  border: 2px solid #CD96CD;
-  background-color: #F5F5F5;
-  outline: none;
-  font-size: 0.875em;
-  color: #4f4f4f;
-  padding: 0.4em;
-  border-radius: 10px;
+  width: 70%;
+  margin: 0 auto 1em;
+  padding: 8px 5%;
+  color: #333;
+  border: 1px solid rgba(0,0,0,0.15);
+  border-radius: 4px;
+  transition: all 0.3s ease-out;
+  box-shadow: 
+      inset 0 1px 0 rgba(255,255,255,0.5), 
+      0 2px 2px rgba(0,0,0,0.3), 
+      0 0 4px 1px rgba(0,0,0,0.2); 
+  /* Font styles */
+  text-decoration: none;
 }
+
 .login-wrapper input:focus,
 .create-account-wrapper input:focus{
   background-color: #fff;
   box-shadow: 0 0 3px rgba(0,0,0,0.6);	
 }
-.login-wrapper button,
-.create-account-wrapper button{
-  display: block;	
-  margin: 0 auto 0 auto;
-  background-color: #CFCFCF;
-  border: 2px solid #CD96CD;
-  font-size: 1.25em;
-  font-weight: bold;
-  color: #363636;
-  padding: 0.25em 0.5em;
-  cursor: pointer;
-  outline: none;
-  border-radius: 10px;	
-}
-.login-wrapper button:focus,
-.create-account-wrapper button:focus{
-  border: 2px solid #f00;
-}
+/*.login-wrapper button,*/
+/*.create-account-wrapper button{*/
+  /*display: block;	*/
+  /*margin: 0 auto 0 auto;*/
+  /*background-color: #CFCFCF;*/
+  /*border: 2px solid #CD96CD;*/
+  /*font-size: 1.25em;*/
+  /*font-weight: bold;*/
+  /*color: #363636;*/
+  /*padding: 0.25em 0.5em;*/
+  /*cursor: pointer;*/
+  /*outline: none;*/
+  /*border-radius: 10px;	*/
+/*}*/
+/*.login-wrapper button:focus,*/
+/*.create-account-wrapper button:focus{*/
+  /*border: 2px solid #f00;*/
+/*}*/
 .login-wrapper p,
 .create-account-wrapper p{
-  display: inline-block;
-  margin: 1em 0 0 0;
+  display: block;
+  margin: 1em 0;
   font-size: 0.9375em;
   font-weight: bold;
   color: #00688B;
   cursor: pointer;
+  text-align: center;
   text-decoration: underline;	
 }
 .login-wrapper p:hover,
@@ -194,4 +219,27 @@ h2{
 	color: #363636;
 	font-size: 0.825em;
 	font-weight: bold;	
+}
+.modern {
+  display: block;
+  width: 80%;
+  margin: 1em auto;
+  padding: 8px 15px;
+  background: #3bc2c0;
+  color: #fff;
+  border: 1px solid rgba(0,0,0,0.15);
+  border-radius: 4px;
+  transition: all 0.3s ease-out;
+  box-shadow: 
+      inset 0 1px 0 rgba(255,255,255,0.5), 
+      0 2px 2px rgba(0,0,0,0.3), 
+      0 0 4px 1px rgba(0,0,0,0.2); 
+  /* Font styles */
+  text-decoration: none;
+  text-transform: uppercase;
+  text-shadow: 0 1px rgba(100,100,100,0.7);
+}
+ 
+.modern:hover, .modern:focus {
+  background: #25dfdd;
 }

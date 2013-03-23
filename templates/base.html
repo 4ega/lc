@@ -1,0 +1,19 @@
+<template name="base">
+  {{#if currentUser}}
+    {{> chat }}
+    <div class="messageInput">
+      <input type="text" id="text">
+      <input type="submit" id="submit">
+    </div>
+  {{else}}
+    {{#if loggingIn}}
+      <p>Logging in . . .</p>
+    {{else}}
+      {{#if creatingAccount}}
+        {{> newAccountForm}}
+      {{else}}
+        {{> signInPage}}
+      {{/if}}
+    {{/if}}
+  {{/if}}
+</template>

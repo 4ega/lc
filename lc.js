@@ -1,9 +1,6 @@
 var messages = new Meteor.Collection('messages');
 
 if (Meteor.isClient) {
-  Template.base.userLoggetIn = function() {
-    return Meteor.user();
-  };
 
   Template.base.creatingAccount = function () {
     return Session.get('creatingAccount');
@@ -20,15 +17,21 @@ if (Meteor.isClient) {
 
     'click #createAccount': function(e, t) {
       Session.set('creatingAccount', false);
+      
       Accounts.createUser({
         username: t.find("#name").value,
         password: t.find("#password").value,
         email: t.find("#email").value
       });
+      console.log(Accounts);
     },
 
     'click #logOut': function() {
       Meteor.logout();
+    },
+
+    'click #signIn': function(e, t) {
+      Meteor.loginWithPassword(t.find('#name').value, t.find('#password').value);
     }
   });
 
