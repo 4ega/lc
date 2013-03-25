@@ -1,19 +1,15 @@
 <template name="base">
+  <!-- if user is logged in -->
   {{#if currentUser}}
+    <!-- load chat interface -->
     {{> chat }}
-    <div class="messageInput">
-      <input type="text" id="text">
-      <input type="submit" id="submit">
-    </div>
   {{else}}
+    <!-- if user is in process of logging in show loading image-->
     {{#if loggingIn}}
       <p>Logging in . . .</p>
     {{else}}
-      {{#if creatingAccount}}
-        {{> newAccountForm}}
-      {{else}}
-        {{> signInPage}}
-      {{/if}}
+      <!-- sign in block-->
+      {{> signInBlock}}
     {{/if}}
   {{/if}}
 </template>

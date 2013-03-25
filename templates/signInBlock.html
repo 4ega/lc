@@ -1,0 +1,11 @@
+<template name="signInBlock">
+  <!-- create account page -->
+  <div class="login-wrapper">
+    {{#if creatingAccount}}
+      {{> newAccountForm}}
+    <!-- standart page -->
+    {{else}}
+      {{> signInPage}}
+    {{/if}}
+  </div>
+  </template>

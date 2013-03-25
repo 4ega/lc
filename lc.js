@@ -1,8 +1,9 @@
 var messages = new Meteor.Collection('messages');
 
+
 if (Meteor.isClient) {
 
-  Template.base.creatingAccount = function () {
+  Template.signInBlock.creatingAccount = function () {
     return Session.get('creatingAccount');
   };
 
@@ -16,14 +17,19 @@ if (Meteor.isClient) {
     },
 
     'click #createAccount': function(e, t) {
-      Session.set('creatingAccount', false);
-      
-      Accounts.createUser({
-        username: t.find("#name").value,
-        password: t.find("#password").value,
-        email: t.find("#email").value
-      });
-      console.log(Accounts);
+      var pass, conf;
+      pass = t.find('#password').value;
+      conf = t.find('#password-conf').value;
+      if (pass === conf) {
+        Session.set('creatingAccount', false);
+        Accounts.createUser({
+          username: t.find("#name").value,
+          password: t.find("#password").value,
+          email: t.find("#email").value
+        });
+      } else {
+        alert('error');
+      }
     },
 
     'click #logOut': function() {
