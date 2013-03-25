@@ -84,12 +84,12 @@ menu ul li a{
   padding: 0.5em 0;
 }
 
-menu ul li a:active{
+menu ul li a:active {
   background-color: #CDB5CD;
   color: #5D478B;
 }
 
-h2{
+h2 {
   margin: 0;
   padding: 0.625em 0 0.625em 0.625em;
   color: #607B8B;
@@ -97,140 +97,9 @@ h2{
   font-size: 1.25em;	
 }
 
-.login-wrapper,
-.create-account-wrapper{
-  width: 300px;
-  background: url(img/beige_paper.png);
-  border-bottom: 1px solid #aaa;
-  margin: 0 auto;	
-  padding: 1em 0;
-  box-shadow: 0px 2px 3px #999;
-}
-
-.login-wrapper label,
-.create-account-wrapper label{
-  text-align: center;
-  padding: 0 0 1em 0;
-  display: block;	
-  font-size: 1.25em;
-  font-weight: bold;
-  color: #363636;	
-}
-
-.login-wrapper input,
-.create-account-wrapper input{
-  display: block;
-  width: 70%;
-  margin: 0 auto 1em;
-  padding: 8px 5%;
-  color: #333;
-  border: 1px solid rgba(0,0,0,0.15);
-  border-radius: 4px;
-  transition: all 0.3s ease-out;
-  box-shadow: 
-      inset 0 1px 0 rgba(255,255,255,0.5), 
-      0 2px 2px rgba(0,0,0,0.3), 
-      0 0 4px 1px rgba(0,0,0,0.2); 
-  /* Font styles */
-  text-decoration: none;
-}
-
-.login-wrapper input:focus,
-.create-account-wrapper input:focus{
-  background-color: #fff;
-  box-shadow: 0 0 3px rgba(0,0,0,0.6);	
-}
-/*.login-wrapper button,*/
-/*.create-account-wrapper button{*/
-  /*display: block;	*/
-  /*margin: 0 auto 0 auto;*/
-  /*background-color: #CFCFCF;*/
-  /*border: 2px solid #CD96CD;*/
-  /*font-size: 1.25em;*/
-  /*font-weight: bold;*/
-  /*color: #363636;*/
-  /*padding: 0.25em 0.5em;*/
-  /*cursor: pointer;*/
-  /*outline: none;*/
-  /*border-radius: 10px;	*/
-/*}*/
-/*.login-wrapper button:focus,*/
-/*.create-account-wrapper button:focus{*/
-  /*border: 2px solid #f00;*/
-/*}*/
-.login-wrapper p,
-.create-account-wrapper p{
-  display: block;
-  margin: 1em 0;
-  font-size: 0.9375em;
-  font-weight: bold;
-  color: #00688B;
-  cursor: pointer;
-  text-align: center;
-  text-decoration: underline;	
-}
-.login-wrapper p:hover,
-.create-account-wrapper p:hover{
-  text-decoration: none;	
-}
-.chat{
-  background-color: #FFE1FF;
-  margin: 0;
-  overflow: auto;
-  padding: 0 1.5em;
-}
-.chat li{
-  display: block;
-  font-family: Tahoma, Geneva, sans-serif;
-  font-size: 0.75em;
-  overflow: hidden;
-  border-bottom: 1px solid #CDB5CD;
-  padding: 1.5em 0;
-}
-.name{
-  padding: 0 0 0.25em 0;
-  color: #363636;
-  display: block;
-  font-weight: bold;
-}
-.message{
-  color: #4F4F4F;
-  line-height: 1.25em;
-  display: block;
-}
-.messageInput{
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  margin: -1px 0 0 0;
-  background-color: #CD96CD;
-  border-top: 1px solid #8B668B;
-}
-.messageInput input[type=text] {
-	width: 70%;
-	display: block;
-  float:left;
-	margin: 0 auto;
-	padding: 0.5em;
-	border: 1px solid #8B668B;
-	outline: none;
-	font-family: Tahoma, Geneva, sans-serif;
-	font-size: 0.8125em;	
-}
-.messageInput input[type=button] {
-	display: block;
-	margin: 0.25em auto;
-	padding: 0.5em 1em;
-	border: 1px solid #8B668B;
-  border-radius: 5px;
-	color: #363636;
-	font-size: 0.825em;
-	font-weight: bold;	
-}
-.logo-big {
-  width: 150px;
-  height: 150px;
-  margin: 10px auto;
-  background: url(img/logo_big.png) 0 0 no-repeat;
-}
-@import "css/modern"
+// Sign in Page
+@import "css/signin.less";
+// Chat Page
+@import "css/chat.less";
+// Button class styles
+@import "css/modern.less"
