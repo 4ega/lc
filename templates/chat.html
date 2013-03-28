@@ -8,7 +8,12 @@
   <ul class="chat">
     {{#each collection}}
     <li>
-      <span class="name">{{ name }}</span><p class="message">{{ message }}</p>
+      <div class="avatar"><img src="img/avatar.jpg" alt="user name"></div>
+      <div class="message_wrap">
+          <span class="name">{{ name }}:</span>
+          <span class="message">{{ message }}</span>      
+      </div>
+      <div class="clr">&nbsp;</div>
     </li>
     {{/each}}
   </ul>

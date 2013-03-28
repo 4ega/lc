@@ -170,7 +170,7 @@ h2{
 .create-account-wrapper p:hover{
   text-decoration: none;	
 }
-.chat{
+/*.chat{
   background-color: #FFE1FF;
   margin: 0;
   overflow: auto;
@@ -219,7 +219,7 @@ h2{
 	color: #363636;
 	font-size: 0.825em;
 	font-weight: bold;	
-}
+}*/
 .modern {
   display: block;
   width: 80%;
