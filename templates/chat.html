@@ -2,6 +2,7 @@
   <nav>
     <ul>
       <li>menu item 1</li>
+      <li>menu item 2</li>
       <li id="logOut">log out</li>
     </ul>
   </nav>
@@ -11,14 +12,26 @@
       <div class="avatar"><img src="img/avatar.jpg" alt="user name"></div>
       <div class="message_wrap">
           <span class="name">{{ name }}:</span>
-          <span class="message">{{ message }}</span>      
+          <span class="text">{{ message }}</span>
+          <div class="left_corner">&nbsp;</div>      
       </div>
       <div class="clr">&nbsp;</div>
     </li>
+    <li class="user">
+      <div class="avatar"><img src="img/cobra_face.jpg" alt="user name"></div>
+      <div class="message_wrap">
+          <span class="name">{{ name }}:</span>
+          <span class="text">{{ message }}</span>
+          <div class="right_corner">&nbsp;</div>      
+      </div>
+      <div class="clr">&nbsp;</div>
+    </li>    
     {{/each}}
   </ul>
   <div class="messageInput">
-    <input type="text" id="text">
-    <input type="button" id="submit" value="SEND">
+  	<div>
+        <input type="text" id="text">
+        <input type="button" id="submit" value="SEND">
+    </div>
   </div>
 </template>
