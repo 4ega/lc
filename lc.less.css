@@ -25,6 +25,11 @@ header{
   border-top: 1px solid #FF6A6A;
   border-bottom: 2px solid #8B3A3A;
   background-color: #CD5555;
+  background-image: -webkit-linear-gradient(top, hsl(0, 80%, 70%), #CD5555);
+  background-image:    -moz-linear-gradient(top, hsl(0, 80%, 70%), #CD5555);
+  background-image:     -ms-linear-gradient(top, hsl(0, 80%, 70%), #CD5555); 
+  background-image:      -o-linear-gradient(top, hsl(0, 80%, 70%), #CD5555);
+  background-image:         linear-gradient(to bottom, hsl(0, 80%, 70%), #CD5555);
   position: relative;	
   box-shadow: 0 3px 4px #999;
 }
@@ -34,59 +39,31 @@ h1{
   background-repeat: no-repeat;
   background-position: left center;
   display: block;
-  text-align: center;
+  text-align: left;
   text-transform: uppercase;
-  color: #fff;
-  font-size: 1.5em;
-  padding: 0.25em 0;
-  text-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+  font-style: italic;
+  color: #F5F5F5;
+  font-size: 1em;
+  padding: 1em 3em 1em 32px;
+  text-shadow: 2px 2px 3px rgba(0,0,0,0.2);
 }
 
-a.menu_toggle{
+.menu_toggle{
   position: absolute;
   top: 0.25em;
   right: 0.25em;
   border: 2px solid blue;
-  text-indent: -9999px;
-  font-size: 1.5em;
-  border: 1px solid #fff;
+  font-size: 2em;
+  border: 2px solid #F5F5F5;
   width: 1em;
-  height: 1em;	
+  height: 0.9375em;
 }
 
-a.menu_toggle:hover{
-  background-color: #EED2EE;
-  border: 1px solid #8B3A3A;	
-}
-
-menu{
-  background-color: #EED2EE;
-  border-bottom: 1px solid #CDB5CD;
-}
-
-menu ul{
+.menu_toggle li{
   display: block;
-}
-
-menu ul li{
-  display: block;
-  border-bottom: 1px solid #CDB5CD;
-}
-
-menu ul li a{
-  display: block;
-  text-align: center;
-  text-transform: uppercase;
-  font-size: 1em;
-  font-weight: bold;
-  text-decoration: none;
-  color: #5D478B;
-  padding: 0.5em 0;
-}
-
-menu ul li a:active {
-  background-color: #CDB5CD;
-  color: #5D478B;
+  background-color: #F5F5F5;
+  height: 0.1875em;
+  margin: 0.09375em 0.09375em 0 0.09375em;
 }
 
 h2 {
